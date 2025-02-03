@@ -10,7 +10,7 @@ body {
 
 /* Header más animado y profesional */
 header {
-    background:  #c9d783; /* Degradado naranja cálido */
+    background: #c9d783; /* Degradado naranja cálido */
     padding: 20px;
     color: #631605;
     position: fixed;
@@ -55,7 +55,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color:#631605; /* Naranja más oscuro en hover */
+    background-color: #631605; /* Naranja más oscuro en hover */
     color: white;
     border-color: white; /* Cambia el color del borde al pasar el ratón */
 }
@@ -71,7 +71,7 @@ main {
 }
 
 .hero-buttons button {
-    background-color:#c9d783; /* Rosa fluor */
+    background-color: #c9d783; /* Rosa fluor */
     color: white;
     font-size: 24px;
     padding: 20px 40px;
@@ -99,7 +99,7 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    margin:30px 35px;
+    margin: 30px 35px;
     margin-bottom: 50px;
 }
 
@@ -109,7 +109,6 @@ main {
     background-color: #f4f4f4; /* Fondo gris claro y suave */
     border-radius: 15px;
     padding: 20px;
-    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     transition: transform 0.3s ease;
@@ -234,115 +233,101 @@ footer p {
     color: #ff1493; /* Rosa fluor al pasar el ratón */
 }
 
-/* Media Queries para pantallas grandes (computadora) */
-@media (min-width: 1366px) {
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
     header h1 {
-        font-size: 48px; /* Aumenta el tamaño de la fuente */
+        font-size: 28px;
     }
-
-    nav ul li a {
-        font-size: 20px; /* Aumenta el tamaño de los enlaces */
+    
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .hero-buttons button {
+        font-size: 20px;
         padding: 15px 30px;
     }
-
-    .hero-buttons button {
-        font-size: 28px; /* Aumenta el tamaño de los botones */
-        padding: 25px 50px;
+    
+    .productos {
+        width: 90%;
+        gap: 30px;
     }
-
+    
     .producto {
-        width: 90%; /* Hace que los productos ocupen más espacio */
-        max-width: 700px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
     }
-
-    .faq h2, .promociones h2 {
-        font-size: 36px;
-    }
-
-    .faq-item h3 {
-        font-size: 28px;
+    
+    .background-image1, .background-image2, .background-image3 {
+        width: 200px;
+        height: 200px;
     }
 
     .descripcion h2 {
-        font-size: 32px;
+        font-size: 24px;
     }
 
     .descripcion p {
+        font-size: 16px;
+    }
+
+    .faq h2 {
+        font-size: 28px;
+    }
+
+    .faq-item h3 {
         font-size: 20px;
     }
 
-    footer p {
-        font-size: 24px;
-    }
-}
-
-/* Media Queries para pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 32px; /* Ajusta el tamaño del texto en pantallas pequeñas */
-    }
-
-    nav ul li a {
+    .faq-item p {
         font-size: 16px;
-        padding: 10px 20px;
     }
 
-    .hero-buttons button {
-        font-size: 20px; /* Ajusta el tamaño de los botones */
-        padding: 18px 35px;
-    }
-
-    .producto {
-        width: 90%;
-    }
-
-    .faq h2, .promociones h2 {
+    .promociones h2 {
         font-size: 28px;
-    }
-
-    .faq-item h3 {
-        font-size: 22px;
-    }
-
-    .descripcion h2 {
-        font-size: 24px;
-    }
-
-    .descripcion p {
-        font-size: 16px;
     }
 
     footer p {
         font-size: 18px;
     }
+
+    .social-buttons a {
+        font-size: 16px;
+    }
 }
 
-/* Media Queries para pantallas muy pequeñas (teléfonos como el Galaxy A04) */
-@media (max-width: 720px) {
+/* Media Queries para dispositivos muy pequeños (A04 y similares) */
+@media (max-width: 480px) {
     header h1 {
-        font-size: 28px; /* Ajusta el tamaño del texto */
-    }
-
-    nav ul li a {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-
-    .hero-buttons button {
-        font-size: 18px; /* Ajusta el tamaño de los botones */
-        padding: 15px 30px;
-    }
-
-    .producto {
-        width: 95%;
-    }
-
-    .faq h2, .promociones h2 {
         font-size: 24px;
     }
 
-    .faq-item h3 {
-        font-size: 20px;
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-buttons button {
+        font-size: 18px;
+        padding: 12px 25px;
+    }
+
+    .productos {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .producto {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .background-image1, .background-image2, .background-image3 {
+        width: 180px;
+        height: 180px;
     }
 
     .descripcion h2 {
@@ -353,7 +338,27 @@ footer p {
         font-size: 14px;
     }
 
+    .faq h2 {
+        font-size: 24px;
+    }
+
+    .faq-item h3 {
+        font-size: 18px;
+    }
+
+    .faq-item p {
+        font-size: 14px;
+    }
+
+    .promociones h2 {
+        font-size: 24px;
+    }
+
     footer p {
         font-size: 16px;
+    }
+
+    .social-buttons a {
+        font-size: 14px;
     }
 }
