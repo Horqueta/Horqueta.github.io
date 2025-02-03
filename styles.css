@@ -11,23 +11,23 @@ body {
 /* Header más animado y profesional */
 header {
     background:  #c9d783; /* Degradado naranja cálido */
-    padding: 2rem;
+    padding: 1.46%; /* 20px en relación a 1366px */
     color: #631605;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.3); /* Sombra más marcada */
-    border-bottom: 0.3rem solid #6ab04c; /* Borde inferior verde */
+    box-shadow: 0 0.29% 0.88% rgba(0, 0, 0, 0.3); /* 4px y 12px */
+    border-bottom: 0.22% solid #6ab04c; /* 3px */
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.25rem;
-    letter-spacing: 0.2rem;
+    font-size: 2.63%; /* 36px */
+    letter-spacing: 0.15%; /* 2px */
     font-weight: bold;
     text-transform: uppercase;
-    text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.3); /* Sombra de texto */
+    text-shadow: 0.15% 0.15% 0.29% rgba(0, 0, 0, 0.3); /* 2px y 4px */
 }
 
 nav ul {
@@ -35,23 +35,23 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.46%; /* 20px */
 }
 
 nav ul li {
-    margin: 0 1rem;
+    margin: 0 0.73%; /* 10px */
 }
 
 nav ul li a {
     background-color: #ffffff; /* Blanco para destacar */
     color: #404cf7; /* Naranja cálido */
-    font-size: 1.125rem;
+    font-size: 1.32%; /* 18px */
     text-decoration: none;
-    padding: 1.2rem 2.5rem;
-    border-radius: 1rem;
+    padding: 0.88% 1.83%; /* 12px y 25px */
+    border-radius: 0.73%; /* 10px */
     transition: background-color 0.3s ease, color 0.3s ease;
     font-weight: bold;
-    border: 0.2rem solid #f7a440; /* Borde naranja */
+    border: 0.15% solid #f7a440; /* 2px */
 }
 
 nav ul li a:hover {
@@ -62,29 +62,29 @@ nav ul li a:hover {
 
 /* Ajustar el contenido por el header fijo */
 main {
-    margin-top: 14rem;
+    margin-top: 18.23%; /* 140px */
 }
 
 /* Sección con botones grandes */
 .hero-buttons {
-    margin: 4rem 0;
+    margin: 5.21% 0; /* 40px */
 }
 
 .hero-buttons button {
     background-color:#c9d783; /* Rosa fluor */
     color: white;
-    font-size: 1.5rem;
-    padding: 2rem 4rem;
-    margin: 1rem;
+    font-size: 1.75%; /* 24px */
+    padding: 2.60% 5.85%; /* 20px y 40px */
+    margin: 1.30%; /* 10px */
     border: none;
-    border-radius: 1rem;
+    border-radius: 0.73%; /* 10px */
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .hero-buttons button:hover {
     background-color: #ff69b4; /* Más claro al pasar el ratón */
-    transform: translateY(-0.5rem); /* Efecto de levantar al hover */
+    transform: translateY(-0.65%); /* 5px */
 }
 
 .hero-buttons button a {
@@ -98,19 +98,18 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4rem;
-    margin: 3rem 3.5rem;
-    margin-bottom: 5rem;
+    gap: 5.21%; /* 40px */
+    margin: 2.20% 2.56%; /* 30px y 35px */
+    margin-bottom: 6.51%; /* 50px */
 }
 
 .producto {
     display: flex;
     align-items: center;
     background-color: #f4f4f4; /* Fondo gris claro y suave */
-    border-radius: 1.5rem;
-    padding: 2rem;
-    
-    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+    border-radius: 1.10%; /* 15px */
+    padding: 2.60%; /* 20px */
+    box-shadow: 0 0.29% 0.58% rgba(0, 0, 0, 0.1); /* 4px y 8px */
     width: 100%;
     transition: transform 0.3s ease;
 }
@@ -120,11 +119,11 @@ main {
 }
 
 .background-image1, .background-image2, .background-image3 {
-    width: 20%;
-    height: auto;
+    width: 18.30%; /* 250px */
+    height: 32.55%; /* 250px basado en altura de 768px */
     background-size: cover;
     background-position: center;
-    border-radius: 1.5rem;
+    border-radius: 1.10%; /* 15px */
 }
 
 .background-image1 {
@@ -142,67 +141,67 @@ main {
 .descripcion {
     flex-grow: 1;
     text-align: left;
-    padding-left: 2rem;
+    padding-left: 1.46%; /* 20px */
 }
 
 .descripcion h2 {
-    font-size: 1.75rem;
+    font-size: 2.05%; /* 28px */
     color: #4a773c;
 }
 
 .descripcion p {
-    font-size: 1.125rem;
+    font-size: 1.32%; /* 18px */
     color: #555; /* Texto más suave */
 }
 
 /* Sección de preguntas frecuentes (FAQs) */
 .faq {
     width: 80%;
-    margin: 4rem auto;
+    margin: 5.21% auto; /* 40px */
     text-align: left;
 }
 
 .faq h2 {
-    font-size: 2rem;
+    font-size: 2.34%; /* 32px */
     color: #4a773c;
-    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.2); /* Sombra ligera en el título */
+    text-shadow: 0.07% 0.07% 0.39% rgba(0, 0, 0, 0.2); /* 1px y 3px */
 }
 
 .faq-item {
     background-color: #f7f7f7; /* Fondo más claro */
-    padding: 2rem;
-    margin: 1rem 0;
-    border-radius: 1rem;
-    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+    padding: 2.60%; /* 20px */
+    margin: 1.30% 0; /* 10px */
+    border-radius: 1.30%; /* 10px */
+    box-shadow: 0 0.29% 0.58% rgba(0, 0, 0, 0.1); /* 4px y 8px */
 }
 
 .faq-item h3 {
-    font-size: 1.5rem;
+    font-size: 1.75%; /* 24px */
     color: #6ab04c;
 }
 
 .faq-item p {
-    font-size: 1.125rem;
+    font-size: 1.32%; /* 18px */
     color: #555; /* Texto más suave */
 }
 
 /* Sección de promociones */
 .promociones {
     width: 80%;
-    margin: 4rem auto;
+    margin: 5.21% auto; /* 40px */
 }
 
 .promociones h2 {
-    font-size: 2rem;
+    font-size: 2.34%; /* 32px */
     color: #4a773c;
 }
 
 .promo-item {
     background-color: #f7f7f7; /* Fondo más claro */
-    padding: 2rem;
-    margin: 2rem 0;
-    border-radius: 1rem;
-    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+    padding: 2.60%; /* 20px */
+    margin: 2.60% 0; /* 20px */
+    border-radius: 1.30%; /* 10px */
+    box-shadow: 0 0.29% 0.58% rgba(0, 0, 0, 0.1); /* 4px y 8px */
 }
 
 /* Footer con redes sociales */
@@ -210,22 +209,22 @@ footer {
     background-color: #6ab04c;
     color: white;
     text-align: center;
-    padding: 3rem 0;
+    padding: 3.91% 0; /* 30px */
 }
 
 footer p {
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 1.46%; /* 20px */
 }
 
 .social-buttons {
-    margin-top: 2rem;
+    margin-top: 2.60%; /* 20px */
 }
 
 .social-buttons a {
     color: white;
-    font-size: 1.125rem;
-    margin: 0 1.5rem;
+    font-size: 1.32%; /* 18px */
+    margin: 0 1.10%; /* 15px */
     text-decoration: none;
     transition: color 0.3s ease;
 }
