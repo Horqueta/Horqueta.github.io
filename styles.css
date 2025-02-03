@@ -6,56 +6,52 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    box-sizing: border-box;
 }
 
 /* Header más animado y profesional */
 header {
-    background: #c9d783; /* Degradado naranja cálido */
-    padding: 2rem;
+    background:  #c9d783; /* Degradado naranja cálido */
+    padding: 20px;
     color: #631605;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.3); /* Sombra más marcada */
-    border-bottom: 0.25rem solid #6ab04c; /* Borde inferior verde */
-    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra más marcada */
+    border-bottom: 3px solid #6ab04c; /* Borde inferior verde */
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
-    letter-spacing: 0.1rem;
+    font-size: 36px;
+    letter-spacing: 2px;
     font-weight: bold;
     text-transform: uppercase;
-    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.3); /* Sombra de texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto */
 }
 
-/* Menu de navegación */
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 2vw; /* Espacio flexible entre elementos */
-    flex-wrap: wrap; /* Para que se ajusten en pantallas pequeñas */
+    gap: 20px;
 }
 
 nav ul li {
-    margin: 0;
+    margin: 0 10px;
 }
 
 nav ul li a {
     background-color: #ffffff; /* Blanco para destacar */
-    color: #404cf7;
-    font-size: 1rem;
+    color: #404cf7; /* Naranja cálido */
+    font-size: 18px;
     text-decoration: none;
-    padding: 1rem 1.5rem;
-    border-radius: 1rem;
+    padding: 12px 25px;
+    border-radius: 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
     font-weight: bold;
-    border: 0.125rem solid #f7a440; /* Borde naranja */
+    border: 2px solid #f7a440; /* Borde naranja */
 }
 
 nav ul li a:hover {
@@ -66,36 +62,29 @@ nav ul li a:hover {
 
 /* Ajustar el contenido por el header fijo */
 main {
-    margin-top: 9rem; /* Ajusta el margen superior para que no se tape el contenido por el header fijo */
-    padding: 2rem;
+    margin-top: 140px;
 }
 
 /* Sección con botones grandes */
 .hero-buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 4vw; /* Aumenta el espacio entre los botones */
-    margin-top: 6rem; /* Añadido para separar el primer botón de "Precios Condimentos" */
+    margin: 40px 0;
 }
 
 .hero-buttons button {
-    background-color: #c9d783;
+    background-color:#c9d783; /* Rosa fluor */
     color: white;
-    font-size: 1.5rem;
-    padding: 2rem 3rem;
+    font-size: 24px;
+    padding: 20px 40px;
+    margin: 10px;
     border: none;
-    border-radius: 1rem;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    flex: 1 1 calc(50% - 6vw); /* Los botones ocupan el 50% del ancho de la pantalla */
-    max-width: 20rem; /* Máximo tamaño del botón */
-    margin: 1rem; /* Espacio entre botones */
 }
 
 .hero-buttons button:hover {
     background-color: #ff69b4; /* Más claro al pasar el ratón */
-    transform: translateY(-0.25rem); /* Efecto de levantar al hover */
+    transform: translateY(-5px); /* Efecto de levantar al hover */
 }
 
 .hero-buttons button a {
@@ -105,65 +94,115 @@ main {
 
 /* Sección de productos con colores más tranquilos */
 .productos {
-    width: 90%;
-    max-width: 100%;
-    margin: 6rem auto; /* Más espacio arriba y abajo */
+    width: 80%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 4vw; /* Espacio flexible entre productos */
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin:30px 35px;
+    margin-bottom: 50px;
+}
+
+.producto {
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4; /* Fondo gris claro y suave */
+    border-radius: 15px;
+    padding: 20px;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.producto:hover {
+    transform: scale(1.02); /* Efecto de agrandar ligeramente */
+}
+
+.background-image1, .background-image2, .background-image3 {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.background-image1 {
+    background-image: url('Fondo\ frutos.png');
+}
+
+.background-image2 {
+    background-image: url('Aceite\ de\ oliva.png');
+}
+
+.background-image3 {
+    background-image: url('Fondo\ pagina.png');
+}
+
+.descripcion {
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.descripcion h2 {
+    font-size: 28px;
+    color: #4a773c;
+}
+
+.descripcion p {
+    font-size: 18px;
+    color: #555; /* Texto más suave */
 }
 
 /* Sección de preguntas frecuentes (FAQs) */
 .faq {
-    width: 90%;
-    max-width: 100%;
-    margin: 6rem auto; /* Más espacio arriba y abajo */
+    width: 80%;
+    margin: 40px auto;
     text-align: left;
 }
 
 .faq h2 {
-    font-size: 2rem;
+    font-size: 32px;
     color: #4a773c;
-    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra ligera en el título */
 }
 
 .faq-item {
-    background-color: #f7f7f7;
-    padding: 2rem;
-    margin: 1rem 0;
-    border-radius: 1rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    background-color: #f7f7f7; /* Fondo más claro */
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .faq-item h3 {
-    font-size: 1.5rem;
+    font-size: 24px;
     color: #6ab04c;
 }
 
 .faq-item p {
-    font-size: 1rem;
-    color: #555;
+    font-size: 18px;
+    color: #555; /* Texto más suave */
 }
 
 /* Sección de promociones */
 .promociones {
-    width: 90%;
-    max-width: 100%;
-    margin: 6rem auto; /* Más espacio arriba y abajo */
+    width: 80%;
+    margin: 40px auto;
 }
 
 .promociones h2 {
-    font-size: 2rem;
+    font-size: 32px;
     color: #4a773c;
 }
 
 .promo-item {
-    background-color: #f7f7f7;
-    padding: 2rem;
-    margin: 2rem 0;
-    border-radius: 1rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    background-color: #f7f7f7; /* Fondo más claro */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer con redes sociales */
@@ -171,22 +210,22 @@ footer {
     background-color: #6ab04c;
     color: white;
     text-align: center;
-    padding: 3rem 0;
+    padding: 30px 0;
 }
 
 footer p {
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 20px;
 }
 
 .social-buttons {
-    margin-top: 2rem;
+    margin-top: 20px;
 }
 
 .social-buttons a {
     color: white;
-    font-size: 1.25rem;
-    margin: 0 2rem;
+    font-size: 18px;
+    margin: 0 15px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -197,74 +236,124 @@ footer p {
 
 /* Media Queries para pantallas grandes (computadora) */
 @media (min-width: 1366px) {
-    .hero-buttons button {
-        flex: 1 1 calc(25% - 6vw); /* En pantallas grandes, cada botón ocupará un 25% del ancho */
+    header h1 {
+        font-size: 48px; /* Aumenta el tamaño de la fuente */
     }
 
-    .faq h2, .promociones h2 {
-        font-size: 2.25rem;
+    nav ul li a {
+        font-size: 20px; /* Aumenta el tamaño de los enlaces */
+        padding: 15px 30px;
+    }
+
+    .hero-buttons button {
+        font-size: 28px; /* Aumenta el tamaño de los botones */
+        padding: 25px 50px;
     }
 
     .producto {
-        max-width: 35rem;
+        width: 90%; /* Hace que los productos ocupen más espacio */
+        max-width: 700px;
+    }
+
+    .faq h2, .promociones h2 {
+        font-size: 36px;
+    }
+
+    .faq-item h3 {
+        font-size: 28px;
+    }
+
+    .descripcion h2 {
+        font-size: 32px;
+    }
+
+    .descripcion p {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 24px;
     }
 }
 
 /* Media Queries para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2rem;
+        font-size: 32px; /* Ajusta el tamaño del texto en pantallas pequeñas */
     }
 
     nav ul li a {
-        font-size: 1rem;
-        padding: 1rem;
+        font-size: 16px;
+        padding: 10px 20px;
     }
 
     .hero-buttons button {
-        flex: 1 1 100%; /* Los botones ocupan el 100% del ancho en pantallas pequeñas */
+        font-size: 20px; /* Ajusta el tamaño de los botones */
+        padding: 18px 35px;
+    }
+
+    .producto {
+        width: 90%;
+    }
+
+    .faq h2, .promociones h2 {
+        font-size: 28px;
+    }
+
+    .faq-item h3 {
+        font-size: 22px;
     }
 
     .descripcion h2 {
-        font-size: 1.5rem;
+        font-size: 24px;
     }
 
     .descripcion p {
-        font-size: 1rem;
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 18px;
     }
 }
 
 /* Media Queries para pantallas muy pequeñas (teléfonos como el Galaxy A04) */
 @media (max-width: 720px) {
     header h1 {
-        font-size: 1.75rem;
+        font-size: 28px; /* Ajusta el tamaño del texto */
     }
 
     nav ul li a {
-        font-size: 0.875rem;
-        padding: 1rem 1.5rem;
-    }
-
-    .hero-buttons {
-        margin-top: 4rem;
-        gap: 5vw; /* Aumenta el espacio entre botones en móviles */
+        font-size: 14px;
+        padding: 8px 16px;
     }
 
     .hero-buttons button {
-        flex: 1 1 100%; /* Los botones ocupan el 100% del ancho en móviles */
-        max-width: none;
-        padding: 1.5rem 2.5rem;
+        font-size: 18px; /* Ajusta el tamaño de los botones */
+        padding: 15px 30px;
     }
 
-    .faq h2 {
-        font-size: 1.5rem;
+    .producto {
+        width: 95%;
     }
 
-    .promo-item, .faq-item {
-        padding: 1.5rem;
+    .faq h2, .promociones h2 {
+        font-size: 24px;
+    }
+
+    .faq-item h3 {
+        font-size: 20px;
+    }
+
+    .descripcion h2 {
+        font-size: 22px;
+    }
+
+    .descripcion p {
+        font-size: 14px;
     }
 
     footer p {
-        font-size: 1rem;
+        font-size: 16px;
     }
 }
