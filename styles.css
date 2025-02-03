@@ -11,23 +11,23 @@ body {
 /* Header más animado y profesional */
 header {
     background:  #c9d783; /* Degradado naranja cálido */
-    padding: 20px;
+    padding: 2rem;
     color: #631605;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra más marcada */
-    border-bottom: 3px solid #6ab04c; /* Borde inferior verde */
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.3); /* Sombra más marcada */
+    border-bottom: 0.3rem solid #6ab04c; /* Borde inferior verde */
 }
 
 header h1 {
     margin: 0;
-    font-size: 36px;
-    letter-spacing: 2px;
+    font-size: 2.25rem;
+    letter-spacing: 0.2rem;
     font-weight: bold;
     text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto */
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.3); /* Sombra de texto */
 }
 
 nav ul {
@@ -35,23 +35,23 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 2rem;
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 1rem;
 }
 
 nav ul li a {
     background-color: #ffffff; /* Blanco para destacar */
     color: #404cf7; /* Naranja cálido */
-    font-size: 18px;
+    font-size: 1.125rem;
     text-decoration: none;
-    padding: 12px 25px;
-    border-radius: 10px;
+    padding: 1.2rem 2.5rem;
+    border-radius: 1rem;
     transition: background-color 0.3s ease, color 0.3s ease;
     font-weight: bold;
-    border: 2px solid #f7a440; /* Borde naranja */
+    border: 0.2rem solid #f7a440; /* Borde naranja */
 }
 
 nav ul li a:hover {
@@ -62,29 +62,29 @@ nav ul li a:hover {
 
 /* Ajustar el contenido por el header fijo */
 main {
-    margin-top: 140px;
+    margin-top: 14rem;
 }
 
 /* Sección con botones grandes */
 .hero-buttons {
-    margin: 40px 0;
+    margin: 4rem 0;
 }
 
 .hero-buttons button {
     background-color:#c9d783; /* Rosa fluor */
     color: white;
-    font-size: 24px;
-    padding: 20px 40px;
-    margin: 10px;
+    font-size: 1.5rem;
+    padding: 2rem 4rem;
+    margin: 1rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .hero-buttons button:hover {
     background-color: #ff69b4; /* Más claro al pasar el ratón */
-    transform: translateY(-5px); /* Efecto de levantar al hover */
+    transform: translateY(-0.5rem); /* Efecto de levantar al hover */
 }
 
 .hero-buttons button a {
@@ -98,19 +98,19 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
-    margin:30px 35px;
-    margin-bottom: 50px;
+    gap: 4rem;
+    margin: 3rem 3.5rem;
+    margin-bottom: 5rem;
 }
 
 .producto {
     display: flex;
     align-items: center;
     background-color: #f4f4f4; /* Fondo gris claro y suave */
-    border-radius: 15px;
-    padding: 20px;
+    border-radius: 1.5rem;
+    padding: 2rem;
     
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
     width: 100%;
     transition: transform 0.3s ease;
 }
@@ -120,11 +120,11 @@ main {
 }
 
 .background-image1, .background-image2, .background-image3 {
-    width: 250px;
-    height: 250px;
+    width: 20%;
+    height: auto;
     background-size: cover;
     background-position: center;
-    border-radius: 15px;
+    border-radius: 1.5rem;
 }
 
 .background-image1 {
@@ -142,67 +142,67 @@ main {
 .descripcion {
     flex-grow: 1;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 2rem;
 }
 
 .descripcion h2 {
-    font-size: 28px;
+    font-size: 1.75rem;
     color: #4a773c;
 }
 
 .descripcion p {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #555; /* Texto más suave */
 }
 
 /* Sección de preguntas frecuentes (FAQs) */
 .faq {
     width: 80%;
-    margin: 40px auto;
+    margin: 4rem auto;
     text-align: left;
 }
 
 .faq h2 {
-    font-size: 32px;
+    font-size: 2rem;
     color: #4a773c;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra ligera en el título */
+    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.2); /* Sombra ligera en el título */
 }
 
 .faq-item {
     background-color: #f7f7f7; /* Fondo más claro */
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
 }
 
 .faq-item h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #6ab04c;
 }
 
 .faq-item p {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #555; /* Texto más suave */
 }
 
 /* Sección de promociones */
 .promociones {
     width: 80%;
-    margin: 40px auto;
+    margin: 4rem auto;
 }
 
 .promociones h2 {
-    font-size: 32px;
+    font-size: 2rem;
     color: #4a773c;
 }
 
 .promo-item {
     background-color: #f7f7f7; /* Fondo más claro */
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
 }
 
 /* Footer con redes sociales */
@@ -210,22 +210,22 @@ footer {
     background-color: #6ab04c;
     color: white;
     text-align: center;
-    padding: 30px 0;
+    padding: 3rem 0;
 }
 
 footer p {
     margin: 0;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .social-buttons {
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
 .social-buttons a {
     color: white;
-    font-size: 18px;
-    margin: 0 15px;
+    font-size: 1.125rem;
+    margin: 0 1.5rem;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -233,4 +233,3 @@ footer p {
 .social-buttons a:hover {
     color: #ff1493; /* Rosa fluor al pasar el ratón */
 }
-    
