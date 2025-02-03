@@ -6,52 +6,54 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    font-size: 1rem; /* Tamaño base de fuente */
 }
 
 /* Header más animado y profesional */
 header {
     background: #c9d783; /* Degradado naranja cálido */
-    padding: 20px;
+    padding: 2vh 4vw; /* Espaciado adaptable */
     color: #631605;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra más marcada */
-    border-bottom: 3px solid #6ab04c; /* Borde inferior verde */
+    border-bottom: 0.2rem solid #6ab04c; /* Borde inferior verde */
 }
 
 header h1 {
     margin: 0;
-    font-size: 36px;
-    letter-spacing: 2px;
+    font-size: 2.5rem; /* Tamaño de fuente adaptable */
+    letter-spacing: 0.1rem;
     font-weight: bold;
     text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto */
 }
 
+/* Navegación */
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 3vw;
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 2vw;
 }
 
 nav ul li a {
     background-color: #ffffff; /* Blanco para destacar */
     color: #404cf7; /* Naranja cálido */
-    font-size: 18px;
+    font-size: 1.2rem;
     text-decoration: none;
-    padding: 12px 25px;
-    border-radius: 10px;
+    padding: 1.2vh 2.5vw;
+    border-radius: 0.6rem;
     transition: background-color 0.3s ease, color 0.3s ease;
     font-weight: bold;
-    border: 2px solid #f7a440; /* Borde naranja */
+    border: 0.2rem solid #f7a440; /* Borde naranja */
 }
 
 nav ul li a:hover {
@@ -62,22 +64,22 @@ nav ul li a:hover {
 
 /* Ajustar el contenido por el header fijo */
 main {
-    margin-top: 140px;
+    margin-top: 13vh;
 }
 
 /* Sección con botones grandes */
 .hero-buttons {
-    margin: 40px 0;
+    margin: 5vh 0;
 }
 
 .hero-buttons button {
     background-color: #c9d783; /* Rosa fluor */
     color: white;
-    font-size: 24px;
-    padding: 20px 40px;
-    margin: 10px;
+    font-size: 2rem; /* Tamaño de fuente adaptable */
+    padding: 3vh 6vw;
+    margin: 2vh;
     border: none;
-    border-radius: 10px;
+    border-radius: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -98,17 +100,16 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
-    margin: 30px 35px;
-    margin-bottom: 50px;
+    gap: 5vh;
+    margin: 4vh auto;
 }
 
 .producto {
     display: flex;
     align-items: center;
     background-color: #f4f4f4; /* Fondo gris claro y suave */
-    border-radius: 15px;
-    padding: 20px;
+    border-radius: 1rem;
+    padding: 3vh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     transition: transform 0.3s ease;
@@ -119,11 +120,11 @@ main {
 }
 
 .background-image1, .background-image2, .background-image3 {
-    width: 250px;
-    height: 250px;
+    width: 30vw;
+    height: 30vw;
     background-size: cover;
     background-position: center;
-    border-radius: 15px;
+    border-radius: 1rem;
 }
 
 .background-image1 {
@@ -141,66 +142,66 @@ main {
 .descripcion {
     flex-grow: 1;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 2vw;
 }
 
 .descripcion h2 {
-    font-size: 28px;
+    font-size: 2.5rem; /* Tamaño de fuente adaptable */
     color: #4a773c;
 }
 
 .descripcion p {
-    font-size: 18px;
+    font-size: 1.2rem; /* Tamaño de fuente adaptable */
     color: #555; /* Texto más suave */
 }
 
 /* Sección de preguntas frecuentes (FAQs) */
 .faq {
     width: 80%;
-    margin: 40px auto;
+    margin: 4vh auto;
     text-align: left;
 }
 
 .faq h2 {
-    font-size: 32px;
+    font-size: 2.8rem; /* Tamaño de fuente adaptable */
     color: #4a773c;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra ligera en el título */
 }
 
 .faq-item {
     background-color: #f7f7f7; /* Fondo más claro */
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 10px;
+    padding: 3vh;
+    margin: 2vh 0;
+    border-radius: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .faq-item h3 {
-    font-size: 24px;
+    font-size: 2rem; /* Tamaño de fuente adaptable */
     color: #6ab04c;
 }
 
 .faq-item p {
-    font-size: 18px;
+    font-size: 1.2rem; /* Tamaño de fuente adaptable */
     color: #555; /* Texto más suave */
 }
 
 /* Sección de promociones */
 .promociones {
     width: 80%;
-    margin: 40px auto;
+    margin: 4vh auto;
 }
 
 .promociones h2 {
-    font-size: 32px;
+    font-size: 2.8rem; /* Tamaño de fuente adaptable */
     color: #4a773c;
 }
 
 .promo-item {
     background-color: #f7f7f7; /* Fondo más claro */
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
+    padding: 3vh;
+    margin: 2vh 0;
+    border-radius: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -209,22 +210,22 @@ footer {
     background-color: #6ab04c;
     color: white;
     text-align: center;
-    padding: 30px 0;
+    padding: 5vh 0;
 }
 
 footer p {
     margin: 0;
-    font-size: 20px;
+    font-size: 1.6rem; /* Tamaño de fuente adaptable */
 }
 
 .social-buttons {
-    margin-top: 20px;
+    margin-top: 3vh;
 }
 
 .social-buttons a {
     color: white;
-    font-size: 18px;
-    margin: 0 15px;
+    font-size: 1.2rem; /* Tamaño de fuente adaptable */
+    margin: 0 2vw;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -233,132 +234,106 @@ footer p {
     color: #ff1493; /* Rosa fluor al pasar el ratón */
 }
 
-/* Media Queries para dispositivos móviles */
+/* Media Queries para adaptar el diseño a pantallas más pequeñas */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 28px;
+        font-size: 2rem;
     }
-    
-    nav ul {
-        flex-direction: column;
-        gap: 15px;
+
+    nav ul li a {
+        font-size: 1rem;
+        padding: 1vh 2vw;
     }
-    
+
     .hero-buttons button {
-        font-size: 20px;
-        padding: 15px 30px;
+        font-size: 1.6rem;
+        padding: 2vh 5vw;
     }
-    
+
     .productos {
         width: 90%;
-        gap: 30px;
     }
-    
+
     .producto {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 15px;
+        padding: 2vh;
     }
-    
+
     .background-image1, .background-image2, .background-image3 {
-        width: 200px;
-        height: 200px;
+        width: 40vw;
+        height: 40vw;
     }
 
     .descripcion h2 {
-        font-size: 24px;
+        font-size: 2rem;
     }
 
     .descripcion p {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .faq h2 {
-        font-size: 28px;
+        font-size: 2rem;
     }
 
     .faq-item h3 {
-        font-size: 20px;
+        font-size: 1.8rem;
     }
 
-    .faq-item p {
-        font-size: 16px;
-    }
-
-    .promociones h2 {
-        font-size: 28px;
+    .promo-item {
+        padding: 2vh;
     }
 
     footer p {
-        font-size: 18px;
-    }
-
-    .social-buttons a {
-        font-size: 16px;
+        font-size: 1.4rem;
     }
 }
 
-/* Media Queries para dispositivos muy pequeños (A04 y similares) */
 @media (max-width: 480px) {
     header h1 {
-        font-size: 24px;
+        font-size: 1.8rem;
     }
 
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
+    nav ul li a {
+        font-size: 1rem;
+        padding: 1vh 2vw;
     }
 
     .hero-buttons button {
-        font-size: 18px;
-        padding: 12px 25px;
+        font-size: 1.5rem;
+        padding: 2vh 4vw;
     }
 
     .productos {
         width: 100%;
-        gap: 20px;
-    }
-
-    .producto {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
     }
 
     .background-image1, .background-image2, .background-image3 {
-        width: 180px;
-        height: 180px;
+        width: 50vw;
+        height: 50vw;
     }
 
     .descripcion h2 {
-        font-size: 22px;
+        font-size: 1.8rem;
     }
 
     .descripcion p {
-        font-size: 14px;
+        font-size: 1rem;
     }
 
     .faq h2 {
-        font-size: 24px;
+        font-size: 1.8rem;
     }
 
     .faq-item h3 {
-        font-size: 18px;
+        font-size: 1.6rem;
     }
 
-    .faq-item p {
-        font-size: 14px;
-    }
-
-    .promociones h2 {
-        font-size: 24px;
+    .promo-item {
+        padding: 2vh;
     }
 
     footer p {
-        font-size: 16px;
-    }
-
-    .social-buttons a {
-        font-size: 14px;
+        font-size: 1.2rem;
     }
 }
