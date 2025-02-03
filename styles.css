@@ -66,7 +66,7 @@ nav ul li a:hover {
 
 /* Ajustar el contenido por el header fijo */
 main {
-    margin-top: 8rem;
+    margin-top: 9rem; /* Ajusta el margen superior para que no se tape el contenido por el header fijo */
     padding: 2rem;
 }
 
@@ -75,8 +75,8 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 3vw; /* Aumenta el espacio entre los botones, relativo a la pantalla */
-    margin: 4rem 0;
+    gap: 4vw; /* Aumenta el espacio entre los botones */
+    margin-top: 6rem; /* Añadido para separar el primer botón de "Precios Condimentos" */
 }
 
 .hero-buttons button {
@@ -107,60 +107,18 @@ main {
 .productos {
     width: 90%;
     max-width: 100%;
-    margin: 4rem auto;
+    margin: 6rem auto; /* Más espacio arriba y abajo */
     display: flex;
     flex-wrap: wrap;
-    gap: 3vw; /* Espacio flexible entre productos */
+    gap: 4vw; /* Espacio flexible entre productos */
     justify-content: center;
-}
-
-.producto {
-    background-color: #f4f4f4;
-    border-radius: 1rem;
-    padding: 2rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-    flex: 1 1 calc(100% - 6vw);
-    max-width: 30rem;
-    transition: transform 0.3s ease;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.producto:hover {
-    transform: scale(1.02);
-}
-
-.background-image1, .background-image2, .background-image3 {
-    width: 100%;
-    max-width: 15rem;
-    height: auto;
-    background-size: cover;
-    background-position: center;
-    border-radius: 1rem;
-}
-
-.descripcion {
-    flex-grow: 1;
-    text-align: left;
-    padding-left: 2rem;
-}
-
-.descripcion h2 {
-    font-size: 1.75rem;
-    color: #4a773c;
-}
-
-.descripcion p {
-    font-size: 1rem;
-    color: #555; /* Texto más suave */
 }
 
 /* Sección de preguntas frecuentes (FAQs) */
 .faq {
     width: 90%;
     max-width: 100%;
-    margin: 5rem auto;
+    margin: 6rem auto; /* Más espacio arriba y abajo */
     text-align: left;
 }
 
@@ -192,7 +150,7 @@ main {
 .promociones {
     width: 90%;
     max-width: 100%;
-    margin: 5rem auto;
+    margin: 6rem auto; /* Más espacio arriba y abajo */
 }
 
 .promociones h2 {
