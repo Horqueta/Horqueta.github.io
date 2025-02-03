@@ -195,7 +195,22 @@ footer p {
     color: #ff1493; /* Rosa fluor al pasar el ratón */
 }
 
-/* Media Queries para pantallas pequeñas */
+/* Media Queries para pantallas grandes (computadora) */
+@media (min-width: 1366px) {
+    .hero-buttons button {
+        flex: 1 1 calc(25% - 6vw); /* En pantallas grandes, cada botón ocupará un 25% del ancho */
+    }
+
+    .faq h2, .promociones h2 {
+        font-size: 2.25rem;
+    }
+
+    .producto {
+        max-width: 35rem;
+    }
+}
+
+/* Media Queries para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
@@ -215,6 +230,41 @@ footer p {
     }
 
     .descripcion p {
+        font-size: 1rem;
+    }
+}
+
+/* Media Queries para pantallas muy pequeñas (teléfonos como el Galaxy A04) */
+@media (max-width: 720px) {
+    header h1 {
+        font-size: 1.75rem;
+    }
+
+    nav ul li a {
+        font-size: 0.875rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .hero-buttons {
+        margin-top: 4rem;
+        gap: 5vw; /* Aumenta el espacio entre botones en móviles */
+    }
+
+    .hero-buttons button {
+        flex: 1 1 100%; /* Los botones ocupan el 100% del ancho en móviles */
+        max-width: none;
+        padding: 1.5rem 2.5rem;
+    }
+
+    .faq h2 {
+        font-size: 1.5rem;
+    }
+
+    .promo-item, .faq-item {
+        padding: 1.5rem;
+    }
+
+    footer p {
         font-size: 1rem;
     }
 }
