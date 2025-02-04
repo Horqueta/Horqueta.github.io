@@ -35,7 +35,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 7vw; /* Separación adaptativa entre los enlaces */
+    gap: 4vw; /* Separación adaptativa entre los enlaces */
 }
 
 nav ul li {
@@ -101,7 +101,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5rem; /* Aumentada la separación entre los productos */
+    gap: 4rem; /* Aumentada la separación entre los productos */
     margin: 30px 35px;
     margin-bottom: 50px;
 }
@@ -239,15 +239,15 @@ footer p {
 /* Media Queries para pantallas más pequeñas */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 3.5rem; /* Tamaño más pequeño para pantallas pequeñas */
+        font-size: 2.5rem; /* Tamaño más pequeño para pantallas pequeñas */
     }
 
     nav ul {
-        gap: 8vw; /* Menos separación para pantallas más pequeñas */
+        gap: 4vw; /* Menos separación para pantallas más pequeñas */
     }
 
     .hero-buttons {
-        gap: 7vw; /* Menos separación entre botones */
+        gap: 5vw; /* Menos separación entre botones */
     }
 
     .hero-buttons button {
@@ -291,11 +291,11 @@ footer p {
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 3rem; /* Tamaño aún más pequeño */
+        font-size: 2rem; /* Tamaño aún más pequeño */
     }
 
     .hero-buttons {
-        gap: 8vw; /* Separación aún mayor para pantallas muy pequeñas */
+        gap: 6vw; /* Separación aún mayor para pantallas muy pequeñas */
     }
 
     .hero-buttons button {
