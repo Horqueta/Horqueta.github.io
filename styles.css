@@ -35,7 +35,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 3vw; /* Separación adaptativa entre los enlaces */
+    gap: 4vw; /* Separación adaptativa entre los enlaces */
 }
 
 nav ul li {
@@ -62,15 +62,16 @@ nav ul li a:hover {
 
 /* Ajustar el contenido por el header fijo */
 main {
-    margin-top: 13vh; /* Ajustado para pantallas más pequeñas */
+    margin-top: 10vh; /* Ajuste para evitar que el header tape el contenido */
 }
 
 /* Sección con botones grandes */
 .hero-buttons {
-    margin: 5vh 0;
+    margin: 12vh 0; /* Mayor separación desde el header */
     display: flex;
-    justify-content: center;
-    gap: 5vw; /* Aumentar la separación entre los botones */
+    justify-content: space-evenly; /* Asegura que los botones estén distribuidos de forma equitativa */
+    gap: 6vw; /* Aumentar separación entre botones */
+    flex-wrap: wrap; /* Asegura que los botones no se solapen en pantallas pequeñas */
 }
 
 .hero-buttons button {
@@ -78,11 +79,12 @@ main {
     color: white;
     font-size: 2rem; /* Tamaño de fuente adaptable */
     padding: 3vh 6vw;
-    margin: 0 3vw; /* Aumentar el margen entre los botones */
+    margin: 0 2vw; /* Mayor margen entre los botones */
     border: none;
     border-radius: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    min-width: 180px; /* Asegura que los botones no sean demasiado pequeños */
 }
 
 .hero-buttons button:hover {
@@ -247,11 +249,14 @@ footer p {
     }
 
     .hero-buttons {
-        gap: 4vw; /* Menos separación entre botones */
+        gap: 5vw; /* Menos separación entre botones */
+        flex-direction: column; /* Alineación vertical para pantallas pequeñas */
+        justify-content: center;
     }
 
     .hero-buttons button {
-        margin: 0 2vw; /* Menos margen entre los botones */
+        margin: 1rem 0; /* Espacio entre botones */
+        min-width: 250px; /* Asegura un tamaño adecuado */
     }
 
     .producto {
@@ -299,7 +304,7 @@ footer p {
     }
 
     .hero-buttons button {
-        margin: 0 4vw; /* Más margen entre los botones */
+        margin: 1rem 0; /* Espacio entre botones */
     }
 
     .producto {
@@ -333,6 +338,6 @@ footer p {
     }
 
     .social-buttons a {
-        font-size: 1rem; /* Ajustar tamaño */
+        font-size: 1.2rem; /* Ajuste de tamaño */
     }
 }
