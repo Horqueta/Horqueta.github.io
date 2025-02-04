@@ -35,7 +35,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 4vw; /* Separación adaptativa entre los enlaces */
+    gap: 3vw; /* Separación adaptativa entre los enlaces */
 }
 
 nav ul li {
@@ -62,15 +62,15 @@ nav ul li a:hover {
 
 /* Ajustar el contenido por el header fijo */
 main {
-    margin-top: 14vh; /* Espacio adicional para evitar solapamiento con el header */
+    margin-top: 13vh; /* Ajustado para pantallas más pequeñas */
 }
 
 /* Sección con botones grandes */
 .hero-buttons {
-    margin: 8vh 0; /* Mayor separación para que no se superpongan */
+    margin: 5vh 0;
     display: flex;
     justify-content: center;
-    gap: 6vw; /* Aumentar separación entre botones */
+    gap: 5vw; /* Aumentar la separación entre los botones */
 }
 
 .hero-buttons button {
@@ -78,7 +78,7 @@ main {
     color: white;
     font-size: 2rem; /* Tamaño de fuente adaptable */
     padding: 3vh 6vw;
-    margin: 0 2vw; /* Mayor margen entre los botones */
+    margin: 0 3vw; /* Aumentar el margen entre los botones */
     border: none;
     border-radius: 1rem;
     cursor: pointer;
@@ -247,7 +247,7 @@ footer p {
     }
 
     .hero-buttons {
-        gap: 5vw; /* Menos separación entre botones */
+        gap: 4vw; /* Menos separación entre botones */
     }
 
     .hero-buttons button {
@@ -299,7 +299,7 @@ footer p {
     }
 
     .hero-buttons button {
-        margin: 0 3vw; /* Más margen entre los botones */
+        margin: 0 4vw; /* Más margen entre los botones */
     }
 
     .producto {
