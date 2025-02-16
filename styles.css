@@ -17,7 +17,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 850;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra más marcada */
     border-bottom: 3px solid #6ab04c; /* Borde inferior verde */
 }
